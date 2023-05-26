@@ -6,11 +6,11 @@ $ termux-setup-storage
    • Ketik y Atau Pilih Izinkan
 $ pkg install python
 $ pkg install git
-$ git clone https://github.com/Dapunta/RanAraya
+$ git clone https://github.com/NolepXx/SEENG
 ```
 ### ⇨  Menjalankan Script
 ```
 $ cd RanAraya
 $ git pull
-$ python run.py
+$ python elite.py
 ```
