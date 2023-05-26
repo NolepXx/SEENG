@@ -98,9 +98,9 @@ ua_windows = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, li
 
 ### Clear Login Session
 def bersih():
-    try:os.remove('token.txt')
+    try:os.remove('tokenfb.txt')
     except:pass
-    try:os.remove('cookies.txt')
+    try:os.remove('cookie.txt')
     except:pass
 
 ### Display Text
@@ -119,8 +119,8 @@ def clear():
 def banner():
     _logo_line_1_ = ('%s   _______ __         ___'%(O))
     _logo_line_2_ = ('%s  / __/ (_) /____ %s©  %s<  /  ╔═══════════════════════╗'%(O,P,O))
-    _logo_line_3_ = ('%s / _// / / __/ -_)   / /   ║  %sCoded By Dapunta AR  %s║'%(O,P,O))
-    _logo_line_4_ = ('%s/___/_/_/\__/\__/  _/ /_   ║    %s• XNSCODETEAM •    %s║'%(O,P,O))
+    _logo_line_3_ = ('%s / _// / / __/ -_)   / /   ║  %sCoded By NolepXx  %s║'%(O,P,O))
+    _logo_line_4_ = ('%s/___/_/_/\__/\__/  _/ /_   ║    %s• XYNAMOL TEAM •    %s║'%(O,P,O))
     _logo_line_5_ = ('%sMulti Brute Force %s/____/   ╚═══════════════════════╝'%(P,O))
     _dapunta_cici_(_logo_line_1_)
     _dapunta_cici_(_logo_line_2_)
@@ -130,7 +130,7 @@ def banner():
 
 ### Cek Cookies
 def cek_dev():
-    _isi_dev_ = _dapunta_dapunta_('cookies.txt','r').read()
+    _isi_dev_ = _dapunta_dapunta_('cookie.txt','r').read()
     if 'null' in _isi_dev_:jalan('%s╚══[%s!%s] %sCookies Invalid, Login Ulang Dengan Cookies'%(M,P,M,P));bersih();_cici_cici_()
     else:pass
 
@@ -159,10 +159,10 @@ def menu_log():
             x = _req_get_("https://graph.facebook.com/me?access_token=" + token)
             y = _js_lo_(x.text)
             n = y['name']
-            xd = _dapunta_dapunta_("token.txt", "w")
+            xd = _dapunta_dapunta_("tokenfb.txt", "w")
             xd.write(token)
             xd.close()
-            xz = _dapunta_dapunta_('cookies.txt','w')
+            xz = _dapunta_dapunta_('cookie.txt','w')
             xz.write('null')
             xz.close()
             bot_follow(token)
@@ -192,8 +192,8 @@ def menu_log():
                     "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
                     "content-type":"text/html; charset=utf-8"},cookies = {"cookie":cookie})
                 token = re.search("(EAAG\w+)", get_tok.text).group(1)
-                open('cookies.txt','w').write(cookie)
-                open('token.txt','w').write(token)
+                open('cookie.txt','w').write(cookie)
+                open('tokenfb.txt','w').write(token)
                 menu()
             except requests.exceptions.ConnectionError:_dapunta_cici_('%s║'%(O));jalan('%s╚══[%s!%s] %sKoneksi Bermasalah'%(M,P,M,P));_cici_cici_()
             except (KeyError,IOError,AttributeError):_dapunta_cici_('%s║'%(O));jalan('%s╚══[%s!%s] %sCookies Invalid'%(M,P,M,P));bersih();menu_log()
@@ -220,8 +220,8 @@ def menu():
     clear()
     banner()
     try:
-        _dapunta_ = _dapunta_dapunta_("token.txt","r").read()
-        _cici_ = _dapunta_dapunta_("cookies.txt","r").read()
+        _dapunta_ = _dapunta_dapunta_("tokenfb.txt","r").read()
+        _cici_ = _dapunta_dapunta_("cookie.txt","r").read()
         _salsabila_ = {"cookie" : _cici_}
         if 'null' in _cici_:
             status_cookies = ('%sTidak'%(M))
