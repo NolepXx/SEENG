@@ -98,9 +98,9 @@ ua_windows = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, li
 
 ### Clear Login Session
 def bersih():
-    try:os.remove('token.txt','r')
+    try:os.remove('token.txt')
     except:pass
-    try:os.remove('cok.txt','r')
+    try:os.remove('cok.txt')
     except:pass
 
 ### Display Text
