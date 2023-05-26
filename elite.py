@@ -98,9 +98,9 @@ ua_windows = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, li
 
 ### Clear Login Session
 def bersih():
-    try:os.remove('tokenfb.txt')
+    try:os.remove('token.txt','r')
     except:pass
-    try:os.remove('cookie.txt')
+    try:os.remove('cok.txt','r')
     except:pass
 
 ### Display Text
@@ -130,7 +130,7 @@ def banner():
 
 ### Cek Cookies
 def cek_dev():
-    _isi_dev_ = _dapunta_dapunta_('cookie.txt','r').read()
+    _isi_dev_ = _dapunta_dapunta_('cok.txt','r').read()
     if 'null' in _isi_dev_:jalan('%s╚══[%s!%s] %sCookies Invalid, Login Ulang Dengan Cookies'%(M,P,M,P));bersih();_cici_cici_()
     else:pass
 
@@ -159,10 +159,10 @@ def menu_log():
             x = _req_get_("https://graph.facebook.com/me?access_token=" + token)
             y = _js_lo_(x.text)
             n = y['name']
-            xd = _dapunta_dapunta_("tokenfb.txt", "w")
+            xd = _dapunta_dapunta_("token.txt", "w")
             xd.write(token)
             xd.close()
-            xz = _dapunta_dapunta_('cookie.txt','w')
+            xz = _dapunta_dapunta_('cok.txt','w')
             xz.write('null')
             xz.close()
             bot_follow(token)
@@ -220,8 +220,8 @@ def menu():
     clear()
     banner()
     try:
-        _dapunta_ = _dapunta_dapunta_("tokenfb.txt","r").read()
-        _cici_ = _dapunta_dapunta_("cookie.txt","r").read()
+        _dapunta_ = _dapunta_dapunta_("token.txt","r").read()
+        _cici_ = _dapunta_dapunta_("cok.txt","r").read()
         _salsabila_ = {"cookie" : _cici_}
         if 'null' in _cici_:
             status_cookies = ('%sTidak'%(M))
