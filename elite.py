@@ -1219,19 +1219,19 @@ def tahun(fx):
     return tahunz
 
 ### Convert Cookies
-def cvt_cookies(raw_cookies):
+def cvt_cookies(raw_cok):
     o = {}
-    _raw_cok_warvest_ = c_user,datr,dnonce,fr,sb,xs
-    _raw_cok_aap_     = c_user,fr,sb,xs,datr
-    _cooked_cok_      = sb,datr,c_user,xs,fr
-    kiko = raw_cookies.replace(' ','').split(';')
+    # _raw_cookies_warvest_ = c_user,datr,dnonce,fr,sb,xs
+    # _raw_cookies_aap_     = c_user,fr,sb,xs,datr
+    # _cooked_cookies_      = sb,datr,c_user,xs,fr
+    kiko = raw_cok.replace(' ','').split(';')
     for x in kiko:
         y = x.split('=')[0]
         z = x.split('=')[1]
         o.update({y:z})
-    _cooked_cok = ('sb=%s; datr=%s; c_user=%s; xs=%s; fr=%s'%(o['sb'],o['datr'],o['c_user'],o['xs'],o['fr']))
-    _cok_ = {'cok':cooked_cok}
-    print(cooked_cok)
+    cooked_cok = ('sb=%s; datr=%s; c_user=%s; xs=%s; fr=%s'%(o['sb'],o['datr'],o['c_user'],o['xs'],o['fr']))
+    #_cookies_ = {'cookie':cooked_cookies}
+    #print(cooked_cookies)
     return cooked_cok
 
 ### Metode Crack
