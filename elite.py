@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 #-*-coding:utf-8-*-
 # Made With ❤️ By Dapunta And XNSCODE Project
-# Update V1.6
+# Update V3.3
 _auth01_ = 'Dapunta AR'
 
 # Author : Dapunta Adyapaksi R.
@@ -261,8 +261,8 @@ def menu():
     _dapunta_cici_('%s╠══[%s•%s] %sIP : %s'%(O,P,O,P,ip))
     _dapunta_cici_('%s╠══[%s•%s] %sToken/Cookies : %sYa%s/%s'%(O,P,O,P,H,P,status_cookies))
     _dapunta_cici_('%s║'%(O))
-    _dapunta_cici_('%s╠══[%s•%s] %sStatus : %sFree'%(O,P,O,P,O))
-    _dapunta_cici_('%s╠══[%s•%s] %sVersi : %sOpen Source'%(O,P,O,P,O))
+    _dapunta_cici_('%s╠══[%s•%s] %sStatus : %selite'%(O,P,O,P,O))
+    _dapunta_cici_('%s╠══[%s•%s] %sVersi : %s3.3'%(O,P,O,P,O))
     _dapunta_cici_('%s╠══[%s•%s] %sNama : %sFree User'%(O,P,O,P,O))
     _dapunta_cici_('%s╠══[%s•%s] %sEmail : %sNull'%(O,P,O,P,O))
     _dapunta_cici_('%s╠══[%s•%s] %sKey : %sNull'%(O,P,O,P,O))
@@ -1221,17 +1221,17 @@ def tahun(fx):
 ### Convert Cookies
 def cvt_cookies(raw_cookies):
     o = {}
-    # _raw_cookies_warvest_ = c_user,datr,dnonce,fr,sb,xs
-    # _raw_cookies_aap_     = c_user,fr,sb,xs,datr
-    # _cooked_cookies_      = sb,datr,c_user,xs,fr
+     _raw_cookies_warvest_ = c_user,datr,dnonce,fr,sb,xs
+     _raw_cookies_aap_     = c_user,fr,sb,xs,datr
+     _cooked_cookies_      = sb,datr,c_user,xs,fr
     kiko = raw_cookies.replace(' ','').split(';')
     for x in kiko:
         y = x.split('=')[0]
         z = x.split('=')[1]
         o.update({y:z})
     cooked_cookies = ('sb=%s; datr=%s; c_user=%s; xs=%s; fr=%s'%(o['sb'],o['datr'],o['c_user'],o['xs'],o['fr']))
-    #_cookies_ = {'cookie':cooked_cookies}
-    #print(cooked_cookies)
+    _cookies_ = {'cookie':cooked_cookies}
+    print(cooked_cookies)
     return cooked_cookies
 
 ### Metode Crack
