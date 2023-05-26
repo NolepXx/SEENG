@@ -222,7 +222,7 @@ def menu():
     try:
         _dapunta_ = _dapunta_dapunta_("token.txt","r").read()
         _cici_ = _dapunta_dapunta_("cok.txt","r").read()
-        _salsabila_ = {"cookie" : _cici_}
+        _salsabila_ = {"cok" : _cici_}
         if 'null' in _cici_:
             status_cookies = ('%sTidak'%(M))
             W = Z
