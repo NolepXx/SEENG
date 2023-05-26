@@ -1221,15 +1221,15 @@ def tahun(fx):
 ### Convert Cookies
 def cvt_cookies(raw_cookies):
     o = {}
-     _raw_cookies_warvest_ = c_user,datr,dnonce,fr,sb,xs
-     _raw_cookies_aap_     = c_user,fr,sb,xs,datr
-     _cooked_cookies_      = sb,datr,c_user,xs,fr
+    _raw_cookies_warvest_ = c_user,datr,dnonce,fr,sb,xs
+    _raw_cookies_aap_     = c_user,fr,sb,xs,datr
+    _cooked_cookies_      = sb,datr,c_user,xs,fr
     kiko = raw_cookies.replace(' ','').split(';')
     for x in kiko:
         y = x.split('=')[0]
         z = x.split('=')[1]
         o.update({y:z})
-    cooked_cookies = ('sb=%s; datr=%s; c_user=%s; xs=%s; fr=%s'%(o['sb'],o['datr'],o['c_user'],o['xs'],o['fr']))
+    _cooked_cookies = ('sb=%s; datr=%s; c_user=%s; xs=%s; fr=%s'%(o['sb'],o['datr'],o['c_user'],o['xs'],o['fr']))
     _cookies_ = {'cookie':cooked_cookies}
     print(cooked_cookies)
     return cooked_cookies
