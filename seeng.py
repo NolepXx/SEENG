@@ -1383,13 +1383,14 @@ def lainnya():
 	else:
 		print(' [+] Pilih Yang Bener Asu ')
 		exit()
-#----------------------[ CRACK USERNAME ]----------------------#
+#------------------------[ CRACK USERNAME ]----------------------#
 def crack_nama():
 	nama = []
-	custom = [" iqbal"," kami"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," juven"," der"," rika"," udin"," rayan"," tina"," tiara"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
-	custom2 = [" iqbal"," kami"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," juven"," der"," rika"," udin"," rayan"," tina"," tiara"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
-	cetak(panel(f"    Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 3.000 Username",width=90,padding=(0,2),style=f"bold white"))
-	nam = console.input(f' [+] Masukan Nama : ').split(",")
+	custom = [" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," hendrik"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
+	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","naira ","mancung ","dewi ","josen ","johan ","slot ","sharil ","hendrik ","edo ","ridho ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
+	print('')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mCrack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username')
+	nam = console.input(f'[?]╰─>Masukan Nama > ').split(",")
 	for ser in nam:		
 		for belakang in custom:
 			id = ser+belakang
@@ -1416,11 +1417,12 @@ def cari_nama(link):
 			else:id.append(bo)
 	link = r.find('a',string='Lihat Hasil Selanjutnya').get('href')
 	if(link):
-	  sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz ...");sys.stdout.flush()
+	  sys.stdout.write(f"\r\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMengumpulkan {len(id)} Idz ...");sys.stdout.flush()
 	  time.sleep(0.0000003)
 	  cari_nama(link)
 	else:
 	     print("\r")
+	print('')
 #-----------------[ CRACK EMAIL ]-----------------#
 def crack_email():
 	rc = random.choice
