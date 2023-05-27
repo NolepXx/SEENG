@@ -898,10 +898,50 @@ def clear():
 	os.system('clear')
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	cetak(panel(f"""[bold green]                ___  ____ ____ _   _ ____ _  _ _  _ _  _ 
-[bold green]                |__] |__/ |__|  \_/  |___ |\ | |\ | |\ | 
-[bold green]                |__] |  \ |  |   |   |___ | \| | \| | \|                                                                                                        
-             """,width=90,padding=(0,8),title=f"Banner",style=f"bold white"))
+	cetak(print(f"""[sir]                                              
+                                                                                          
+                                         .-==-----.                                           
+                               .:-=***+-::::::-=+=+++++===-.                              
+                           -****++=-:        -+-:----:::::-**.                            
+                         =#%+===-.=.          ::          .-+#+=:                         
+                        -%@==+++-:%   . -      =   ..=  +  -=***#*                        
+                        =*@=+++=:+*    .       =    ::  +: :=+*+%#-                       
+                        .*@+=--::%:           ::         *-.=++*%#*                       
+                         *=   .-*:            =           -=--=*@@%.                      
+                        *=+=++*+-.            =.              .-=*++                      
+                       **%-=+++++=----=-------==---------:  .-++*+**=                     
+                      :**#*****+=:.  ...::::::::::.     .-=++*****%%%                     
+                      +*++=++*#**#***+=--:.......::-======--===+*#%=%                     
+                      # -**#*+==--.                      .-==+#+=:=*+                     
+                     .%+@-=======-:                           .@#+=:#                     
+                    :*-#=======+-.                             :%+**%.                    
+                   +*=%=-==++*+=:.                              .**+=#                    
+                :+**%*--=++====-. :==**++++++++++++*++-:..        :-=+*                   
+              =++*%@#*##%%%##+++#@#+:-#=-..=+*:.:-**:=#%@*+++=-::.  .=+#=                 
+             +=*%%%%#**+*#@-:*@@@@@@@@%#%####*##%#%%@@@@@@@%=:*@#=#%#***+++:              
+              =*@%==+++=-*%-*@@@@@@@@@@@%%%#**#%%@@@@@@@@@@@%++%+ :=*##%@@*=*             
+                 -=**+-: +#..%@@@@@@@@@@%+-*.:*-*@@@@@@@@@@@*.:*=  :=+++@@#%:             
+                    .-===**. =@@@@@@@@@*++*-+=+**+%@@@@@@@@@: -#+  :=+*#*+:               
+                       .**-: +#####*+--. +:+%*==-.:-=*###%%#= -=##---:.                   
+                       -*%=*+.:=+=. .-: ..*@@@#-: .-:  :++=::*++%*                        
+                        =#%*==-===:.:.   =@@@@@@    :-.-==---=*#*.                        
+                         .-*#%%%@%+*-.: .=%*=+##:. .:=*+%@@%%#+-                          
+                             #@%@@- : . :*= .: =.  . :.-@@#%%.                            
+                             .%=#%=.: .  :: :  :   . :.=%%=#-                             
+                              +-+#*++---.-:::.-:-.-=-*+##*-*                              
+                              :-:%--.*=+=*:-=+.=*=+==.-=%-.=                              
+                              *.-@@#=-.-.-. -. .- -.-=#@@- *                              
+                              *==+@#%@%#**=-+=-=*+%%@@%@#+:*:                             
+                              **.=.-:-=+*%@@@@@@@**+::=.:-+*:                             
+                              +*+. ::-=:=:.-.:- -:-=--: --#+                              
+                               +*+*-. .:=--=--=:--=. .:++*+.                              
+                                .+**=--.          .-.++*+.                                
+                                  =##+#++=--:---=+*#=%#+                                  
+                                   .=**####*##**###+*=.                                   
+                                       .---====---:                                       
+                                                                                          
+
+             """,width=100,padding=(0,3),title=f"Banner",style=f"bold cyan"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
@@ -991,7 +1031,7 @@ def login_lagi334():
 							print(f"\n [+] Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\n [+] Login Berhasil | python BrayennnFB.py");exit()
+							print("\n [+] Login Berhasil | python seeng.py");exit()
 			except Exception as e:
 				print(" [+] Cookies Mokad Kontol")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
@@ -1684,7 +1724,7 @@ def validate1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Validate V1[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1753,7 +1793,7 @@ def validate2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Validate V2[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1822,7 +1862,7 @@ def validate3(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Validate V3[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1891,7 +1931,7 @@ def reguler1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Reguler V1[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1979,7 +2019,7 @@ def reguler2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Reguler V2[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2065,7 +2105,7 @@ def reguler3(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Reguler V3[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2154,7 +2194,7 @@ def kontol(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Async[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2243,7 +2283,7 @@ def bapi(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]M-Alpha[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2332,7 +2372,7 @@ def colmek1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]X[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -2402,7 +2442,7 @@ def colmek2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]d[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
