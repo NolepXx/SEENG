@@ -1389,8 +1389,8 @@ def crack_nama():
 	custom = [" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," hendrik"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
 	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","naira ","mancung ","dewi ","josen ","johan ","slot ","sharil ","hendrik ","edo ","ridho ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
 	print('')
-	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mCrack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username')
-	nam = console.input(f'[?]╰─>Masukan Nama > ').split(",")
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m •\x1b[1;92mCrack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username')
+	nam = console.input(f'[?]•Masukan Nama > ').split(",")
 	for ser in nam:		
 		for belakang in custom:
 			id = ser+belakang
