@@ -10,7 +10,7 @@ $ git clone https://github.com/NolepXx/SEENG
 ```
 ### ⇨  Menjalankan Script
 ```
-$ cd RanAraya
+$ cd SEENG
 $ git pull
 $ python seeng.py
 ```
