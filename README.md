@@ -12,5 +12,5 @@ $ git clone https://github.com/NolepXx/SEENG
 ```
 $ cd RanAraya
 $ git pull
-$ python elite.py
+$ python seeng.py
 ```
