@@ -65,7 +65,7 @@ except Exception as e:
 	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD');exit()
 prox=open('.prox.txt','r').read().splitlines()
 limitd=0
-for agenkuw in range(10000):
+for agenkuw in range(80000):
 	a='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['8.1.0','9','10','11','12'])
 	c='CPH2109'
@@ -814,7 +814,7 @@ for t in range(10000):
     uaa.append(XILL)
 
 #------------[ UBAH UA DIH SINI OM ]---------------#
-for brayen in range(10000):
+for brayen in range(80000):
     rr = random.randint
     rc = random.choice
     g1 = random.choice(['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19'])
@@ -825,7 +825,7 @@ for brayen in range(10000):
     UaMainn = random.choice([u1, u2])
     ugen.append(UaMainn)
  
-for x in range(10):
+for x in range(100,999):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
 	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
 	c=random.randrange(73,100)
