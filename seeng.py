@@ -928,7 +928,7 @@ def clear():
 	os.system('clear')
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	cetak(print(f"""[green]                                              
+	cetak(panel(f"""[green]                                              
                                                                                           
                                          .-==-----.                                           
                                .:-=***+-::::::-=+=+++++===-.                              
