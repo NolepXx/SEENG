@@ -983,7 +983,7 @@ def clear():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	clear()
-	cetak(panel(f'''\t{asu}                                            
+	alvino_xy(f'''\t{asu}                                            
                                                                                           
                                          .-==-----.                                           
                                .:-=***+-::::::-=+=+++++===-.                              
