@@ -49,6 +49,7 @@ gabriel=[]
 uidl =[]
 opsi=[]
 uidf=[]
+uaa = []
 uaku = []
 uaku2 =[]
 console = Console()
