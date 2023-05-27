@@ -825,7 +825,7 @@ for brayen in range(10000):
     UaMainn = random.choice([u1, u2])
     ugen.append(UaMainn)
  
-for x in range(100,999):
+for x in range(10000):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
 	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
 	c=random.randrange(73,100)
