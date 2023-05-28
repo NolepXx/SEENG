@@ -1472,7 +1472,7 @@ def result():
 	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
 	kz = input(f' [+] Pilih : ')
 	if kz in ['2','02']:
-		try:vin = os.listdir('CP')
+		try:vin = os.listdir('/sdcard/CP')
 		except FileNotFoundError:
 			print(' [+] File Tidak Di Temukan ')
 			time.sleep(3)
@@ -1515,7 +1515,7 @@ def result():
 			input('[ Klik Enter ]')
 			back()
 	elif kz in ['1','01']:
-		try:vin = os.listdir('OK')
+		try:vin = os.listdir('/sdcard/OK')
 		except FileNotFoundError:
 			print(' [+] File Tidak Di Temukan ')
 			time.sleep(4)
@@ -2003,7 +2003,7 @@ def validate3(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2012,7 +2012,7 @@ def validate3(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2025,7 +2025,7 @@ def validate3(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2035,7 +2035,7 @@ def validate3(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2091,7 +2091,7 @@ def reguler1(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2100,7 +2100,7 @@ def reguler1(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2113,7 +2113,7 @@ def reguler1(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2123,7 +2123,7 @@ def reguler1(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2177,7 +2177,7 @@ def reguler2(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2186,7 +2186,7 @@ def reguler2(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2199,7 +2199,7 @@ def reguler2(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2209,7 +2209,7 @@ def reguler2(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2265,7 +2265,7 @@ def reguler3(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2274,7 +2274,7 @@ def reguler3(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2287,7 +2287,7 @@ def reguler3(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2297,7 +2297,7 @@ def reguler3(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2354,7 +2354,7 @@ def kontol(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2363,7 +2363,7 @@ def kontol(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcrad/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2376,7 +2376,7 @@ def kontol(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2386,7 +2386,7 @@ def kontol(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2443,7 +2443,7 @@ def bapi(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2452,7 +2452,7 @@ def bapi(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2465,7 +2465,7 @@ def bapi(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='Cepeh Mas')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2475,7 +2475,7 @@ def bapi(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2513,7 +2513,7 @@ def colmek1(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2522,7 +2522,7 @@ def colmek1(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2535,7 +2535,7 @@ def colmek1(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2545,7 +2545,7 @@ def colmek1(idf,pwv):
 					statusok = f'[•] ID       : {idf}\[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2583,7 +2583,7 @@ def colmek2(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh Mas')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2592,7 +2592,7 @@ def colmek2(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Cepeh MAS')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2605,7 +2605,7 @@ def colmek2(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2615,7 +2615,7 @@ def colmek2(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] tahun : {cektahun}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='HOKY')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -4461,9 +4461,9 @@ def massal(self):
 if __name__=='__main__':
 	try:os.system('git pull')
 	except:pass
-	try:os.mkdir('OK')
+	try:os.mkdir('/sdcard/OK')
 	except:pass
-	try:os.mkdir('CP')
+	try:os.mkdir('/sdcard/CP')
 	except:pass
 	try:os.mkdir('data')
 	except:pass
