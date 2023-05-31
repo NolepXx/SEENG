@@ -1381,11 +1381,11 @@ def result():
 				try:hem = open('CP/'+isi,'r').readlines()
 				except:continue
 				cih+=1
-				if cih<10:
-					no = '0'+str(cih)
+				if cih<80:
+					= '0'+str(cih)
 					lol.update({str(cih):str(isi)})
-					lol.update({no:str(isi)})
-					print('['+no+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
+					lol.update({nom:str(isi)})
+					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
@@ -1425,10 +1425,10 @@ def result():
 				except:continue
 				cih+=1
 				if cih<80:
-					no = '0'+str(cih)
+					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
-					lol.update({no:str(isi)})
-					print('['+no+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
+					lol.update({nom:str(isi)})
+					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
