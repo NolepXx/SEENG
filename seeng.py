@@ -162,10 +162,15 @@ def clear():
 	os.system('clear')
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	cetak(panel(f"""[bold green]                ___  ____ ____ _   _ ____ _  _ _  _ _  _ 
-[bold green]                |__] |__/ |__|  \_/  |___ |\ | |\ | |\ | 
-[bold green]                |__] |  \ |  |   |   |___ | \| | \| | \|                                                                                                        
-             """,width=90,padding=(0,8),title=f"Banner",style=f"bold white"))
+	cetak(panel(f"""[bold green]
+	
+ _______ _______ _____   _______ ______ ___ ___ ___ ___ ___ ___ 
+|    |  |       |     |_|    ___|   __ \   |   |   |   |   |   |
+|       |   -   |       |    ___|    __/-     -|-     -|-     -|
+|__|____|_______|_______|_______|___|  |___|___|___|___|___|___|
+                                                                
+
+             """,width=100,padding=(0,5),title=f"NolepXx",style=f"bold cyan"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
