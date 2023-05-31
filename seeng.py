@@ -1385,7 +1385,7 @@ def result():
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({str(nom):str(isi)})
-					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
+					print('['+str(nom)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
@@ -1428,7 +1428,7 @@ def result():
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({str(nom):str(isi)})
-					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
+					print('['+str(nom)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
