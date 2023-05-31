@@ -1036,7 +1036,7 @@ def menu(my_name,my_id):
 	console.print(Columns(dia))
 	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Rochmat Basuki , Nazri XD , Aorec XD , Lukman-XD , Dapunta , Kall",width=90,title=f"[bold green]Thanks To",style=f"bold cyan"))
 	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack From Friends     [bold white][[bold cyan]06[bold white]] Crack From Username[bold white]      [[bold cyan]11[bold white]] Get Headers      \n[bold white][[bold cyan]02[bold white]] Crack From Massal      [bold white][[bold cyan]07[bold white]] Crack From Followers     [[bold cyan]12[bold white]] Spam WhatsApp      \n[bold white][[bold cyan]03[bold white]] Crack From Groups      [[bold cyan]08[bold white]] Crack From Comment       [bold white][[bold cyan]13[bold white]] Spam Sms \n[bold white][[bold cyan]04[bold white]] Crack From Email       [bold white][[bold cyan]09[bold white]] Check Opsi Checkpoint [bold white]   [[bold cyan]14[bold white]] Dump Id \n[bold white][[bold cyan]05[bold white]] Crack From Files       [bold white][[bold cyan]10[bold white]] [bold white]Check Result Crack [bold white]      [[bold cyan]15[bold white]] [bold red]Delete Cookies",width=90,title=f"[bold green]List Menu",style=f"bold cyan"))
-	cetak(panel(f"Jika Ingin Masuk Ke Menu Crack Instagram Ketik[bold green] Instagram[bold white] Untuk Masuk Ke Menu Instagram",width=90,style=f"bold cyan"))
+	cetak(panel(f"Jika Ingin Masuk Ke Menu Crack Instagram Ketik[bold green] Instagram[bold white] Untuk Masuk Ke Menu Instagram",width=90,style=f"bold white"))
 	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
 	if _____brayennn___xd____ in ['1','01']:
 		brayen_dump()
@@ -4324,13 +4324,11 @@ def massal(self):
 if __name__=='__main__':
 	try:os.system('git pull')
 	except:pass
-	try:os.mkdir('OK')
+	try:os.mkdir('/sdcard/OK')
 	except:pass
-	try:os.mkdir('CP')
+	try:os.mkdir('/sdcard/CP')
 	except:pass
 	try:os.mkdir('data')
-	except:pass
-	try:os.system('result')
 	except:pass
 	try:os.mkdir('/sdcard/DUMP-FILE')
 	except:pass
