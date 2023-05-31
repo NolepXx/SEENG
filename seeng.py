@@ -47,6 +47,7 @@ wa = Console()
 taplikasi=[]
 gabriel=[]
 uidl =[]
+uaa=[]
 opsi=[]
 uidf=[]
 console = Console()
