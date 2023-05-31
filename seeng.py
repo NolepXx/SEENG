@@ -1362,16 +1362,16 @@ def crack_file():
 		setting()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Lihat Hasil OK[/]           [bold white][[bold cyan]02[/][bold white]][/] [bold white]Lihat Hasil CP[/]',width=90,padding=(0,11),title=f"[bold white][/][bold green]List Menu Cek[/][bold white][/]",style=f"bold white"))
-	kz = input(f' [+] Pilih : ')
+	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Lihat Hasil OK[/]           [bold white][[bold cyan]02[/][bold white]][/] [bold white]Lihat Hasil CP[/]',width=90,padding=(0,11),title=f"[bold white][/][bold green]List Menu Cek[/][bold white][/]",style=f"bold cyan"))
+	kz = input(f'\n {P}[{x}{H}?{x}{P}]{x} {P}select{x} : ')
 	if kz in ['2','02']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
-			print(' [+] File Tidak Di Temukan ')
+			print(' ╰─  File Tidak Di Temukan ')
 			time.sleep(3)
 			back()
 		if len(vin)==0:
-			print(' [+] Anda Tidak Memiliki Hasil CP ')
+			print(' ╰─  Anda Tidak Memiliki Hasil CP ')
 			time.sleep(4)
 			back()
 		else:
@@ -1389,14 +1389,14 @@ def result():
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Select{x} : ')
+			geeh = input(f'\n{P}{x}{H} ╰─  {x}{P}{x} {P}Select{x} : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print(' [+] Pilih Yang Bener Kontol ')
+				print(' ╰─  Pilih Yang Bener Kontol ')
 				exit()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
-				print(' [+] File Tidak Di Temukan ')
+				print(' ╰─  File Tidak Di Temukan ')
 				time.sleep(4)
 				back()
 			nocp=0
@@ -1414,7 +1414,7 @@ def result():
 			time.sleep(4)
 			back()
 		if len(vin)==0:
-			print(' [+] Anda Tidak Mempunyai File OK ')
+			print(' ╰─  Anda Tidak Mempunyai File OK ')
 			time.sleep(4)
 			back()
 		else:
@@ -1432,14 +1432,14 @@ def result():
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-			geeh = input('\n [+] Pilih : ')
+			geeh = input('\n ╰─  Pilih : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print(' [+] Pilih Yang Bener Kontol ')
+				print(' ╰─  Pilih Yang Bener Kontol ')
 				exit()
 			try:lin = open('OK/'+geh,'r').read().splitlines()
 			except:
-				print(' [+] File Tidak Di Temukan ')
+				print(' ╰─  File Tidak Di Temukan ')
 				time.sleep(4)
 				back()
 			nocp=0
@@ -1447,12 +1447,14 @@ def result():
 				cpkuni=lin[nocp].split('|')
 				cpkuh=f'# ID : {cpkuni[0]} PASSWORD : {cpkuni[1]}'
 				sol().print(mark(cpkuh,style="green"))
-				print(f'{hh}User-Agent : {x}{cpkuni[2]}')
+				print(f'{hh}USER-AGENT : {x}{cpkuni[2]}')
 				nocp +=1
 			input('[ Klik Enter ]')
 			back()
+	elif kz in ['3','03']:
+		back()
 	else:
-		print(' [+] Pilih Yang Bener Kontol ')
+		print(' ╰─  Pilih Yang Bener Kontol ')
 		exit()
 	
 #-------------------[ CRACK-PUBLIK-MASSAL]----------------#
