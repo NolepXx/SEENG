@@ -1384,7 +1384,7 @@ def result():
 				if cih<80:
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
-					lol.update({nom:str(isi)})
+					lol.update({str(nom):str(isi)})
 					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
 				else:
 					lol.update({str(cih):str(isi)})
@@ -1427,7 +1427,7 @@ def result():
 				if cih<80:
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
-					lol.update({nom:str(isi)})
+					lol.update({str(nom):str(isi)})
 					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
 				else:
 					lol.update({str(cih):str(isi)})
