@@ -1382,7 +1382,7 @@ def result():
 				except:continue
 				cih+=1
 				if cih<80:
-					= '0'+str(cih)
+					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
 					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
