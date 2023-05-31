@@ -925,7 +925,7 @@ def banner():
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[[bold cyan]01[bold white]] Login Menggunakan Cookie              [[bold cyan]03[bold white]] Crack Instagram \n[[bold cyan]02[bold white]] Menu Crack Tanpa Login                [[bold cyan]04[bold white]] Cek Hasil Crack ",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
+	cetak(panel(f"[[bold cyan]01[bold white]] Login Menggunakan Cookie              [[bold cyan]03[bold white]] Crack Instagram \n[[bold cyan]02[bold white]] Menu Crack Tanpa Login                [[bold cyan]04[bold white]] Cek Hasil Crack ",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold cyan"))
 	bryn = input(f' [+] Pilih Menu : ')
 	if bryn in ['1','01']:
 		login_lagi334()
@@ -962,7 +962,7 @@ def login():
 		
 def login_lagi334():
 	try:
-		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
+		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold cyan"))
 		your_cookies = input(' [+] Masukan Cookie : ')
 		with requests.Session() as r:
 			try:
@@ -1010,7 +1010,7 @@ def login_lagi334():
 							print(f"\n [+] Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\n [+] Login Berhasil | python BrayennnFB.py");exit()
+							print("\n [+] Login Berhasil | python seeng.py");exit()
 			except Exception as e:
 				print(" [+] Cookies Mokad Kontol")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
