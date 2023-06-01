@@ -1381,14 +1381,14 @@ def result():
 				try:hem = open('CP/'+isi,'r').readlines()
 				except:continue
 				cih+=1
-				if cih<80:
+				if cih<10:
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
-					print('['nom'] 'isi' [ 'str(len(hem))' Account ]'x)
+					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
 				else:
 					lol.update({str(cih):str(isi)})
-					print('['str(cih)'] 'isi' [ 'str(len(hem))' Account ]'x)
+					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
 			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Select{x} : ')
 			try:geh = lol[geeh]
 			except KeyError:
@@ -1428,11 +1428,11 @@ def result():
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
-					print('['nom'] 'isi' [ 'str(len(hem))' Account ]'x)
+					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
 				else:
 					lol.update({str(cih):str(isi)})
-					print('['str(cih)'] 'isi' [ 'str(len(hem))' Account ]'x)
-			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Select{x} : ')
+					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
+			geeh = input('\n [+] Pilih : ')
 			try:geh = lol[geeh]
 			except KeyError:
 				print(' [+] Pilih Yang Bener Kontol ')
