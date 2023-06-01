@@ -1365,7 +1365,7 @@ def result():
 	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Lihat Hasil OK[/]           [bold white][[bold cyan]02[/][bold white]][/] [bold white]Lihat Hasil CP[/]',width=90,padding=(0,11),title=f"[bold white][/][bold green]List Menu Cek[/][bold white][/]",style=f"bold white"))
 	kz = input(f' [+] Pilih : ')
 	if kz in ['2','02']:
-		try:vin = os.listdir('CP')
+		try:vin = os.listdir('/sdcard/CP')
 		except FileNotFoundError:
 			print(' [+] File Tidak Di Temukan ')
 			time.sleep(3)
@@ -1408,7 +1408,7 @@ def result():
 			input('[ Klik Enter ]')
 			back()
 	elif kz in ['1','01']:
-		try:vin = os.listdir('OK')
+		try:vin = os.listdir('/sdcard/OK')
 		except FileNotFoundError:
 			print(' [+] File Tidak Di Temukan ')
 			time.sleep(4)
@@ -4328,6 +4328,8 @@ if __name__=='__main__':
 	try:os.mkdir('/sdcard/CP')
 	except:pass
 	try:os.mkdir('data')
+	except:pass
+	try:os.system('result')
 	except:pass
 	try:os.mkdir('/sdcard/DUMP-FILE')
 	except:pass
