@@ -912,7 +912,7 @@ def clear():
 	os.system('clear')
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	cetak(panel(f"""[bold green]
+	cetak(panel(f"""[asu]
                                   ..   .#+   .@@*  ##+.:-                                 
                              :#+  -+   -@@-   @@+  @@* *@%       :.                       
                      ...+#+  -@@%- .   .*@@   @@= .@@=:#*-      -@@*.-                    
@@ -974,7 +974,7 @@ def banner():
 |__|____|_______|_______|_______|___|  |___|___|___|___|___|___|
                                                                 
 
-             """,width=100,padding=(0,5),title=f"NolepXx",style=f"bold cyan"))
+             """,width=100,padding=(0,4),title=f"NolepXx",style=f"bold cyan"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
@@ -1416,7 +1416,7 @@ def crack_file():
 		setting()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Lihat Hasil OK[/]           [bold white][[bold cyan]02[/][bold white]][/] [bold white]Lihat Hasil CP[/]',width=90,padding=(0,11),title=f"[bold white][/][bold green]List Menu Cek[/][bold white][/]",style=f"bold cyan"))
+	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Lihat Hasil OK[/]           [bold white][[bold cyan]02[/][bold white]][/] [bold white]Lihat Hasil CP[/]',width=90,padding=(0,11),title=f"[bold white][/][bold green]List Menu Cek[/][bold white][/]",style=f"bold white"))
 	kz = input(f' [+] Pilih : ')
 	if kz in ['2','02']:
 		try:vin = os.listdir('/sdcard/CP')
