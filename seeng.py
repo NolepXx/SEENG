@@ -57,11 +57,11 @@ ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],
 sys.stdout.write('\x1b]2; BMBF | BrayennnXD Multi Brute Facebook\x07')
 #------------------[ USER-AGENT ]-------------------#
 try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('.socksku.txt','w').write(prox)
+	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+	open('.prox.txt','w').write(proxylist)
 except Exception as e:
 	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD');exit()
-prox=open('.socksku.txt','r').read().splitlines()
+prox=open('.prox.txt','r').read().splitlines()
 limitd=0
 for agenkuw in range(10000):
 	a='Mozilla/5.0 (Linux; Android'
