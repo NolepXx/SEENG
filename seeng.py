@@ -58,10 +58,10 @@ sys.stdout.write('\x1b]2; BMBF | BrayennnXD Multi Brute Facebook\x07')
 #------------------[ USER-AGENT ]-------------------#
 try:
 	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(proxylist)
+	open('.wifi.txt','w').write(proxylist)
 except Exception as e:
 	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD');exit()
-prox=open('.prox.txt','r').read().splitlines()
+prox=open('.wifi.txt','r').read().splitlines()
 limitd=0
 for agenkuw in range(10000):
 	a='Mozilla/5.0 (Linux; Android'
@@ -885,16 +885,16 @@ for x in range(10000):
 	uak=f'Mozilla/5.0 (Linux; Android {a}; Pixel {b}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 def uaku():
 	try:
-		ua=open('bbnew.txt','r').read().splitlines()
+		ua=open('wifi.txt','r').read().splitlines()
 		for ub in ua:
 			ugen.append(ub)
 	except:
 		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
-		ua=open('.bbnew.txt','w')
+		ua=open('.wifi.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.bbnew.txt','r').read().splitlines()
+		ua=open('.wifi.txt','r').read().splitlines()
 #------------[ INDICATION ]---------------#
 P = '\x1b[1;97m' # PUTIH
 M = '\x1b[1;91m' # MERAH
